@@ -1,6 +1,6 @@
 # Backend_OracleONE_Program
 
-In this repository you will find some of my digital class notes and solved exercises from the Python course at Open Bootcamp (https://campus.open-bootcamp.com/)
+In this repository you will find some of my digital class notes and solved exercises from the Backend ORACLE course at Alura (https://app.aluracursos.com/)
 
 1- Introduction to Programming Logic
 
