@@ -20,23 +20,23 @@ In this repository you will find some of my digital class notes and solved exerc
 
 9- Java - OOP: Understanding Object-Oriented Programming
 
-10 Java - Polymorphism: Understanding inheritance and interfaces
+10- Java - Polymorphism: Understanding inheritance and interfaces
 
-11 Java - Exceptions
+11- Java - Exceptions
 
-12 Java - Mastering Collections
+12- Java - Mastering Collections
 
-13 Introduction to SQL with MySQL
+13- Introduction to SQL with MySQL
 
-14 Java and JDBC - Working with a Database
+14- Java and JDBC - Working with a Database
 
-15 Persistence with JPA - Hibernate
+15- Persistence with JPA - Hibernate
 
-16 Java and JPA - Advanced Queries
+16- Java and JPA - Advanced Queries
 
-17 Java Servlet - Fundamentals of Web Programming with Java
+17- Java Servlet - Fundamentals of Web Programming with Java
 
-18 Java Servlet - Authentication, Authorization, and MVC (Model-View-Controller)
+18- Java Servlet - Authentication, Authorization, and MVC (Model-View-Controller)
 
-20 Spring - Protecting REST API
+19- Spring - Protecting REST API
 
