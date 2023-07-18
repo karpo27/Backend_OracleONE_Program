@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - INGREDIENTES</h1>
+
+<script>
+
+    // Creación de Funcion:
+    function saltar_linea() {
+        document.write("<br>");
+    }
+    
+    function imprimir(frase) {
+        document.write(frase);
+        saltar_linea();
+    }
+
+   
+    var ingredientes = [];
+    var cantidad = parseInt(prompt("¿Cuántos ingredientes vas a añadir?"));
+    var contador = 1;
+
+    while(contador <= cantidad) {
+        var ingrediente = prompt("Informe el ingrediente " + contador);
+
+        if(ingrediente in ingredientes) {
+            ingredientes.push(ingrediente);
+            contador++;
+        }
+
+        
+    }
+
+    console.log(ingredientes);
+
+
+
+</script>

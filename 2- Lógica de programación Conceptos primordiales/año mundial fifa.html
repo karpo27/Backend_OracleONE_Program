@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - AÑO MUNDIAL FIFA</h1>
+
+<script>
+
+    // Creación de Funcion:
+    function saltar_linea() {
+        document.write("<br>");
+    }
+    
+    function imprimir(frase) {
+        document.write(frase);
+        saltar_linea()
+        saltar_linea()
+    }
+
+    año_mundial = 1930;
+
+    while (ano_mundial <= 2022) {
+        imprimir("Hubo mundial de la FIFA en el año: " + año_mundial);
+        ano_mundial += 4
+        
+    }
+
+    imprimir("Fin");
+    
+
+</script>

@@ -1,0 +1,66 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - BARRAS</h1>
+
+<canvas width="600" height="400"> </canvas>
+
+
+<script>
+
+    // Creación de Funcion:
+    function saltar_linea() {
+        document.write("<br>");
+    }
+    
+    function imprimir(frase) {
+        document.write(frase);
+        saltar_linea()
+    }
+
+   
+    function dibujarRectangulo(x, y, base, altura, color) {
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        pincel.fillStyle=color;
+        pincel.fillRect(x,y, base, altura);
+        pincel.strokeStyle="black";
+        pincel.strokeRect(x,y, base, altura);
+    }
+
+    function escribirTexto(x , y, texto) {
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        pincel.font="15px Georgia";
+        pincel.fillStyle="black";
+        pincel.fillText(texto, x, y);    
+    }
+
+
+    //Aquí viene el texto faltante
+    
+    function dibujarBarra(x, y, serie, colores, texto) {
+        temp = 0;
+        for (i = 0; i <= serie.length; i += 1) {
+            
+            dibujarRectangulo(x, y + temp, 50, serie[i], colores[i]);
+            temp += serie[i];
+        }
+
+        escribirTexto(x + 5, y - 10, texto);
+    }
+
+
+    var serie2009 = [6, 47, 41, 3, 3];
+    var serie2019 = [81, 9, 3, 3, 4];
+
+    var colores = ["blue","green","yellow", "red","gray"];
+
+
+
+    dibujarBarra(50, 50, serie2009, colores, "2009");
+    dibujarBarra(150, 50, serie2019, colores, "2019");
+
+
+</script>

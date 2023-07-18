@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - BANDERA</h1>
+
+<canvas width="600" height="400"> </canvas>
+
+
+<script>
+
+    // Creación de Funcion:
+    function saltar_linea() {
+        document.write("<br>");
+    }
+    
+    function imprimir(frase) {
+        document.write(frase);
+        saltar_linea()
+    }
+
+    pantalla = document.querySelector("canvas");
+    pincel = pantalla.getContext("2d");
+
+    pincel.fillStyle = "grey";
+    pincel.fillRect(0,0,600,400);
+
+    function show_alert(evento) {
+        x = evento.pageX - pantalla.offsetLeft;
+        y = evento.pageY - pantalla.offsetTop;
+
+        console.log(evento);
+        alert(x + "," + y);
+    }
+
+    function dibujar_circulo(evento) {
+        x = evento.pageX - pantalla.offsetLeft;
+        y = evento.pageY - pantalla.offsetTop;
+
+        pincel.fillStyle = "blue";
+        pincel.beginPath();
+        pincel.arc(x,y,10,0,2 * 3.14);
+        pincel.fill();
+        console.log(x + "," + y);
+
+    }
+
+    pantalla.onclick = dibujar_circulo;
+ 
+
+
+</script>

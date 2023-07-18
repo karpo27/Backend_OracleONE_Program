@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - ESTRELLAS (ASTERISCOS)</h1>
+
+<script>
+
+    // Creación de Funcion:
+    function saltar_linea() {
+        document.write("<br>");
+    }
+    
+    function imprimir(frase) {
+        document.write(frase);
+        saltar_linea()
+    }
+
+    lineas = 1;
+    columnas = 1;
+    for (lineas; lineas <= 3; lineas += 1) {
+        for (columnas; columnas <= 10; columnas += 1) {
+            imprimir("****");
+            saltar_linea()
+        }
+    }
+
+    saltar_linea()
+    imprimir("fin")
+
+</script>

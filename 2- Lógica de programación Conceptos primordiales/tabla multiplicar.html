@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - TABLA MULTIPLICAR</h1>
+
+<script>
+
+    // Creación de Funcion:
+    function saltar_linea() {
+        document.write("<br>");
+    }
+    
+    function imprimir(frase) {
+        document.write(frase);
+        saltar_linea()
+        saltar_linea()
+    }
+
+    function multiplicar(numero, limite) {
+        contador = 1
+        while (contador <= limite) {
+            imprimir((numero * contador));
+            contador += 1
+        }
+        
+        imprimir("FOR");
+
+        contador_2 = 1
+        for (contador_2; contador_2 <= limite; contador_2 += 1) {
+            imprimir((numero * contador_2));
+            
+        }
+    }
+
+    multiplicar(5, 10);
+
+</script>

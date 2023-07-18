@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - BANDERA</h1>
+
+<canvas width="600" height="400"> </canvas>
+
+
+<script>
+
+    pantalla = document.querySelector("canvas");
+    pincel = pantalla.getContext("2d");
+
+    pincel.fillStyle = "grey";
+    pincel.fillRect(0,0,600,400);
+
+    function circunferencia(x,y,radio) {
+        pincel.fillStyle = "blue";
+        pincel.beginPath();
+        pincel.arc(x,y,radio,0,2 * Math.PI);
+        pincel.fill();
+    }
+
+    function limpiar_pantalla() {
+        pincel.clearRect(0,0,600,400);
+    }
+
+    x = 0;
+    function actualizar_pantalla() {
+        limpiar_pantalla();
+        circunferencia(x,20,10);
+        x += 1;
+
+    }
+    
+    setInterval(actualizar_pantalla, 10);
+
+</script>

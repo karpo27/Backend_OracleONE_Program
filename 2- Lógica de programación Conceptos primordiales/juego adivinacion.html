@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - JUEGO DE ADIVINACION</h1>
+
+<script>
+
+    // Creación de Funcion:
+    function saltar_linea() {
+        document.write("<br>");
+    }
+    
+    function imprimir(frase) {
+        document.write(frase);
+        saltar_linea
+    }
+
+    numero_pensado = Math.round(Math.random() * 10);
+    intentos = 3;
+    
+
+    contador = 1
+    while (contador <= intentos) {
+        
+        numero_lanzado = parseInt(prompt("Ingrese un numero entero entre 0 y 10"))
+
+        if (numero_pensado == numero_lanzado) {
+            alert("usted acerto en intento " + contador);
+            break;
+        }
+
+        else {
+            alert("usted erro");
+        }
+
+        contador += 1;
+    }
+</script>

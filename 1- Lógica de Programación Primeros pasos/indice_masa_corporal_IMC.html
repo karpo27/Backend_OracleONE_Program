@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA PARA CALCULAR IMC</h1>
+
+<script>
+
+    // Creación de Funcion:
+    function calculo_imc(peso, altura) {
+        return Math.round(peso / (altura * altura));  
+
+    }
+
+    peso = prompt("informe su peso");
+    altura = prompt("informe su altura");
+    document.write(calculo_imc(peso, altura));
+    
+    document.write("<br>");
+
+    if (calculo_imc(peso, altura) < 18.5) {
+        document.write("peso por debajo de lo normal")
+    }
+
+    if (18.5 <= calculo_imc(peso, altura) && calculo_imc(peso, altura) < 24.9) {
+        document.write("peso normal")
+    }
+
+    if (24.9 <= calculo_imc(peso, altura) && calculo_imc(peso, altura) < 29.9) {
+        document.write("preobesidad")
+    }
+
+    if (29.9 <= calculo_imc(peso, altura)) {
+        document.write("obesidad")
+    }
+
+
+</script>
+
+

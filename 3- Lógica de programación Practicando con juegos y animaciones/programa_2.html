@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - BANDERA</h1>
+
+<canvas width="600" height="400"> </canvas>
+
+
+<script>
+
+    // Creación de Funcion:
+    function saltar_linea() {
+        document.write("<br>");
+    }
+    
+    function imprimir(frase) {
+        document.write(frase);
+        saltar_linea()
+    }
+
+    pantalla = document.querySelector("canvas");
+    pincel = pantalla.getContext("2d");
+
+
+    function cuadrado_verde(x) {
+        posicion = -50;
+        posicion_stroke = -50
+        while (posicion <= x) {
+            pincel.fillStyle = "green"  //propiedad
+            pincel.fillRect(posicion += 50,0,50,50);  //funcion
+            pincel.strokeStyle = "black";
+            pincel.strokeRect(posicion_stroke += 50,0,50,50);
+        }
+    }
+
+    cuadrado_verde(600)
+
+ 
+
+
+</script>
