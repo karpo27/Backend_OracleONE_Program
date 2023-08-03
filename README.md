@@ -8,35 +8,29 @@ In this repository you will find some of my digital class notes and solved exerc
 
 3- Practicing Programming Logic with Games and Animations
 
-4- HTML and CSS - Part 1
+4- HTML and CSS - Part 1-4
 
-5- HTML and CSS - Part 2
+5- Java - JRE and JDK
 
-6- HTML and CSS - Part 3
+6- Java - OOP: Understanding Object-Oriented Programming
 
-7- HTML and CSS - Part 4
+7- Java - Polymorphism: Understanding inheritance and interfaces
 
-8- Java - JRE and JDK
+8- Java - Exceptions
 
-9- Java - OOP: Understanding Object-Oriented Programming
+9- Java - Mastering Collections
 
-10- Java - Polymorphism: Understanding inheritance and interfaces
+10- Introduction to SQL with MySQL
 
-11- Java - Exceptions
+11- Java and JDBC - Working with a Database
 
-12- Java - Mastering Collections
+12- Persistence with JPA - Hibernate
 
-13- Introduction to SQL with MySQL
+13- Java and JPA - Advanced Queries
 
-14- Java and JDBC - Working with a Database
+14- Java Servlet - Fundamentals of Web Programming with Java
 
-15- Persistence with JPA - Hibernate
+15- Java Servlet - Authentication, Authorization, and MVC (Model-View-Controller)
 
-16- Java and JPA - Advanced Queries
-
-17- Java Servlet - Fundamentals of Web Programming with Java
-
-18- Java Servlet - Authentication, Authorization, and MVC (Model-View-Controller)
-
-19- Spring - Protecting REST API
+16- Spring - Protecting REST API
 
